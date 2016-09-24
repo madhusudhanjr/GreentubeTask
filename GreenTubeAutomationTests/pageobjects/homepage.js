@@ -25,8 +25,8 @@ var loginPage = Object.create(page, {
      similarGamesHeader: { value: '.push-half--top h1'},
      similarGamesList:   { value: '.push-half--top li'},
      gameListSecond:     { value: '.push-half--top li:nth-child(2)'},
-     language:           { value: '.select-language__button'},
-     deLang:             { value: 'span=Deutsch'},
+     language:           { value: '.branding__top .select-language__button'},
+     deLang:             { value: '.branding__top a[data-lang="de"]'},
      logout:             { value: '.btn--link.js-logout'},
      
 
