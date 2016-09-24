@@ -23,7 +23,7 @@ describe('GameTwist Tests: ', function (done) {
 
     it('Navigate to Slots Page and verify components', function () {
       
-        
+       HomePage.open();    
        HomePage.clickSlotsLink();
        HomePage.waitForLoading(3);
        expect(HomePage.getBreadcrumbText()).to.contain('Slots');
@@ -97,7 +97,8 @@ describe('GameTwist Tests: ', function (done) {
     });
 
     it('logout', function () {
-           
+        
+        HomePage.waitForLoading(5);   
         HomePage.performLogout();
               
     });
